@@ -18,10 +18,10 @@
             <HBox>
                <children>
                   <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Настройки" />
-                  <Button mnemonicParsing="false" text="123ать тест111" />
+                  <Button mnemonicParsing="false" text="Начать тест" />
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Тестирование11" />
+            <Button mnemonicParsing="false" text="Тестирование" />
          </children>
       </VBox>
       <VBox prefHeight="400.0" prefWidth="405.0">
