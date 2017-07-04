@@ -11,12 +11,14 @@ import java.util.ArrayList;
  */
 public class ExampleTest {
     /**
+     *
      * test(String string, String where, String command)
      * where - где запускать
      * command - что запускать
      *
      * TestInfo - содержит все данные выдаваемые iperf-ом
      * JsonParser.parser(String json) - парсит json и выдают TestInfo
+     *
      */
     public static void main(String[] args) throws IOException {
         STAFRunner stafRunner = new STAFRunner();
