@@ -1,0 +1,1 @@
+java -classpath "src/remotetest/test_runner/libs/jackson-annotations-2.6.3.jar:src/remotetest/test_runner/libs/jackson-core-2.6.3.jar:src/remotetest/test_runner/libs/jackson-databind-2.6.3.jar:src/remotetest/test_runner/libs/JSTAF.jar":./out remotetest.test_runner.staf_test.ExampleTest

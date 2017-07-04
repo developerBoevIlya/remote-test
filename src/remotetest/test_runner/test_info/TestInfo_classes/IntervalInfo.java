@@ -72,15 +72,15 @@ public class IntervalInfo {
 
     @Override
     public String toString() {
-        return "IntervalInfo:\n" +
-                "socket:\t" + socket + "\n" +
-                "start:\t" + start + "\n" +
-                "end:\t" + end + "\n" +
-                "seconds:\t" + seconds + "\n" +
-                "bytes:\t" + bytes + "\n" +
-                "bits_per_second:\t" + bits_per_second + "\n" +
-                "retransmits:\t" + retransmits + "\n" +
-                "snd_cwnd:\t" + snd_cwnd + "\n" +
-                "omitted:\t" + omitted + "\n";
+        return "======== Interval Info ========\n" +
+                "socket:         \t\t" + socket + "\n" +
+                "start:          \t\t" + start + "\n" +
+                "end:            \t\t" + end + "\n" +
+                "seconds:        \t\t" + seconds + "\n" +
+                "bytes:          \t\t" + bytes + "\n" +
+                "bits_per_second:\t\t" + bits_per_second + "\n" +
+                "retransmits:    \t\t" + retransmits + "\n" +
+                "snd_cwnd:       \t\t" + snd_cwnd + "\n" +
+                "omitted:        \t\t" + omitted + "\n";
     }
 }

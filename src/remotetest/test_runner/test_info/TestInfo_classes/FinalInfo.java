@@ -31,5 +31,12 @@ public class FinalInfo {
         return cpu_utilization_percent;
     }
 
+    @Override
+    public String toString() {
+        return "========= Final  Info =========\n" +
+                sum_sent +
+                sum_received +
+                cpu_utilization_percent;
+    }
 }
 

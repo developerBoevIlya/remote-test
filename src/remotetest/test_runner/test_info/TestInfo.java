@@ -25,23 +25,18 @@ public class TestInfo {
         return startInfo;
     }
 
-    public void setStartInfo(StartInfo startInfo) {
-        this.startInfo = startInfo;
-    }
-
     public ArrayList<IntervalInfo> getIntervals() {
         return intervals;
-    }
-
-    public void setIntervals(ArrayList<IntervalInfo> intervals) {
-        this.intervals = intervals;
     }
 
     public FinalInfo getFinalInfo() {
         return finalInfo;
     }
 
-    public void setFinalInfo(FinalInfo finalInfo) {
-        this.finalInfo = finalInfo;
+    @Override
+    public String toString() {
+        return  startInfo.toString() +
+                intervals.toString() +
+                finalInfo.toString();
     }
 }

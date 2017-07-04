@@ -21,4 +21,15 @@ public class CPUUtilizationPercent {
         this.remote_user = remote_user;
         this.remote_system = remote_system;
     }
+
+    @Override
+    public String toString() {
+        return "CPU utilization percent:\n" +
+                "\thost_total:   \t\t" + host_total + "\n" +
+                "\thost_user:    \t\t" + host_user + "\n" +
+                "\thost_system:  \t\t" + host_system + "\n" +
+                "\tremote_total: \t\t" + remote_total + "\n" +
+                "\tremote_user:  \t\t" + remote_user + "\n" +
+                "\tremote_system:\t\t" + remote_system + "\n";
+    }
 }

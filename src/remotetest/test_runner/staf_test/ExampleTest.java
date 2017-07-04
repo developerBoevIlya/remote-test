@@ -1,10 +1,8 @@
 package remotetest.test_runner.staf_test;
 
-import remotetest.test_runner.test_info.TestInfo_classes.IntervalInfo;
 import remotetest.test_runner.test_info.TestInfo;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Created by sfaxi19 on 02.07.17.
@@ -20,11 +18,13 @@ public class ExampleTest {
      */
     public static void main(String[] args) throws IOException {
         STAFRunner stafRunner = new STAFRunner();
-        stafRunner.test("Iperf test", "local", "iperf3 -s");
+        stafRunner.test("Iperf test", "local", "nohup iperf3 -s & ");
         String jsonResp = stafRunner.test("Iperf test", "192.168.0.3", "iperf3 -J -c 192.168.0.79");
-
+        if (jsonResp == null) return;
         TestInfo testInfo = JsonParser.parser(jsonResp);
-        ArrayList<IntervalInfo> intervalsInfo = testInfo.getIntervals();
-        System.out.println(intervalsInfo.get(0));
+        System.out.println(testInfo.getStartInfo());
+        System.out.println(testInfo.getIntervals().get(0));
+        System.out.println(testInfo.getFinalInfo());
+
     }
 }
