@@ -1,5 +1,9 @@
 package remotetest.test_runner.test_info;
 
+import remotetest.test_runner.test_info.TestInfo_classes.FinalInfo;
+import remotetest.test_runner.test_info.TestInfo_classes.IntervalInfo;
+import remotetest.test_runner.test_info.TestInfo_classes.StartInfo;
+
 import java.util.ArrayList;
 
 /**

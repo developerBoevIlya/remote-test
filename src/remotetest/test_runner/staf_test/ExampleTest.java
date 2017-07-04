@@ -1,6 +1,6 @@
 package remotetest.test_runner.staf_test;
 
-import remotetest.test_runner.test_info.IntervalInfo;
+import remotetest.test_runner.test_info.TestInfo_classes.IntervalInfo;
 import remotetest.test_runner.test_info.TestInfo;
 
 import java.io.IOException;
@@ -11,14 +11,12 @@ import java.util.ArrayList;
  */
 public class ExampleTest {
     /**
-     *
      * test(String string, String where, String command)
      * where - где запускать
      * command - что запускать
-     *
+     * <p/>
      * TestInfo - содержит все данные выдаваемые iperf-ом
      * JsonParser.parser(String json) - парсит json и выдаёт TestInfo
-     *
      */
     public static void main(String[] args) throws IOException {
         STAFRunner stafRunner = new STAFRunner();
