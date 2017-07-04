@@ -17,7 +17,7 @@ public class ExampleTest {
      * command - что запускать
      *
      * TestInfo - содержит все данные выдаваемые iperf-ом
-     * JsonParser.parser(String json) - парсит json и выдают TestInfo
+     * JsonParser.parser(String json) - парсит json и выдаёт TestInfo
      *
      */
     public static void main(String[] args) throws IOException {
