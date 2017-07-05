@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="remotetest.gui.SettingsWindowController">
+   <children>
+      <HBox prefHeight="104.0" prefWidth="459.0">
+         <children>
+            <Label contentDisplay="BOTTOM" text="IP SERVER">
+               <graphic>
+                  <TextField fx:id="txtIPServer" />
+               </graphic>
+            </Label>
+            <Label contentDisplay="BOTTOM" text="IP CLIENT">
+               <graphic>
+                  <TextField fx:id="txtIPClient" />
+               </graphic>
+            </Label>
+            <Label fx:id="setting1" contentDisplay="BOTTOM" layoutX="159.0" layoutY="10.0" text="Setting 1">
+               <graphic>
+                  <TextField fx:id="txtSetting1" />
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="449.0">
+         <children>
+            <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#actionSave" prefHeight="25.0" prefWidth="105.0" text="Сохранить">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCancel" cancelButton="true" layoutX="60.0" layoutY="20.0" mnemonicParsing="false" onAction="#actionClose" prefHeight="25.0" prefWidth="105.0" text="Отмена">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</VBox>

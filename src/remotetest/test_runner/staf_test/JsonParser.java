@@ -29,8 +29,8 @@ public class JsonParser {
                     interval.findValue("seconds").toString(),
                     interval.findValue("bytes").toString(),
                     interval.findValue("bits_per_second").toString(),
-                    interval.findValue("retransmits").toString(),
-                    interval.findValue("snd_cwnd").toString(),
+                    "null",//interval.findValue("retransmits").toString(),
+                    "null",//interval.findValue("snd_cwnd").toString(),
                     interval.findValue("omitted").toString()
             ));
         }
@@ -43,7 +43,7 @@ public class JsonParser {
                 sum_sent_Json.findValue("seconds").toString(),
                 sum_sent_Json.findValue("bytes").toString(),
                 sum_sent_Json.findValue("bits_per_second").toString(),
-                sum_sent_Json.findValue("retransmits").toString()
+                "null"//sum_sent_Json.findValue("retransmits").toString()
         );
         SumReceived sum_received = new SumReceived(
                 sum_received_Json.findValue("start").toString(),

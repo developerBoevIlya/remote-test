@@ -18,8 +18,9 @@ public class ExampleTest {
      */
     public static void main(String[] args) throws IOException {
         STAFRunner stafRunner = new STAFRunner();
-        stafRunner.test("Iperf test", "local", "nohup iperf3 -s & ");
-        String jsonResp = stafRunner.test("Iperf test", "192.168.0.3", "iperf3 -J -c 192.168.0.79");
+        stafRunner.test("Iperf test", "local", "start \"\" iperf3 -s ");
+		//192.168.69.192
+        String jsonResp = stafRunner.test("Iperf test", "192.168.69.192", "iperf3 -J -c 192.168.69.193");
         if (jsonResp == null) return;
         TestInfo testInfo = JsonParser.parser(jsonResp);
         System.out.println(testInfo.getStartInfo());

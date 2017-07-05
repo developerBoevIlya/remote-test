@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+
+
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.chart.*?>
@@ -9,24 +12,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="remotetest.gui.FXMLDocumentController">
    <children>
       <VBox prefHeight="400.0" prefWidth="185.0">
          <children>
-            <ListView prefHeight="303.0" prefWidth="185.0" />
-            <HBox>
-               <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Настройки" />
-                  <Button mnemonicParsing="false" text="Начать тест" />
-               </children>
-            </HBox>
-            <Button mnemonicParsing="false" text="Тестирование" />
+            <TableView fx:id="tableTest" prefHeight="338.0" prefWidth="185.0">
+              <columns>
+                <TableColumn fx:id="columnName" prefWidth="184.0" text="Список тестов" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnSettings" mnemonicParsing="false" onAction="#showDialog" prefHeight="25.0" prefWidth="181.0" text="Настройки" />
+            <Button fx:id="btnTest" mnemonicParsing="false" onAction="#showDialog" prefHeight="25.0" prefWidth="182.0" text="Тестирование" />
          </children>
       </VBox>
       <VBox prefHeight="400.0" prefWidth="405.0">
          <children>
-            <LineChart>
+            <LineChart fx:id="chartResult">
               <xAxis>
                 <CategoryAxis side="BOTTOM" />
               </xAxis>
@@ -34,7 +35,7 @@
                 <NumberAxis side="LEFT" />
               </yAxis>
             </LineChart>
-            <Button mnemonicParsing="false" text="Выбрать результат" />
+            <Button fx:id="btnSelectResult" mnemonicParsing="false" onAction="#showDialog" text="Выбрать результат" />
          </children>
       </VBox>
    </children>
